@@ -1,127 +1,5 @@
-<!DOCTYPE html>
-
-<html>
-
-
-<head>
-
-    <title>ChuckyMagic || Official Website </title>
-
-    <meta charset="utf-8">
-
-    <meta name="description" content="Simple, clean, responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
-
-    <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900"
-        rel="stylesheet" type="text/css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900" rel="stylesheet"
-        type="text/css">
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="static/images/cm4 small.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-
-    <!-- Fontawesome  -->
-    <link rel="stylesheet" href="static/css/font-awesome.min.css">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/animate.css">
-
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
-    <!-- BX slider CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/jquery.bxslider.css">
-
-    <!-- responsive css -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
-
-</head>
-
-
-<body>
-
-    <!-- Header -->
-    <header class="header" id="HOME">
-
-        <!-- Navigation -->
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-
-            <div class="container">
-
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1"
-                        aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <!-- small size logo -->
-                        <img src="static/images/cm5 small.png" alt="logo">
-
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ url_for('home') }}" class="nav-item active">HOME</a></li>
-                        <li><a href="#ABOUT" class="nav-item">ABOUT</a></li>
-                        <li><a href="{{ url_for('blog') }}" class="nav-item">BLOG</a></li>
-                        <li><a href="{{ url_for('programming') }}" class="nav-item">PROGRAMS</a></li>
-                        <li><a href="#SCREENS" class="nav-item">PHOTOGRAPHY</a></li>
-                        <li><a href="#DOWNLOAD" class="nav-item">VIDEOS</a></li>
-                        <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
-                    </ul>
-
-
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-
-
-
-        <div class="header-overlay">
-
-
-            <div class="container header-container">
-
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                        <!-- Logo -->
-                        <div class="logo text-center">
-
-                            <img src="static/images/cm5 small.png" alt="logo">
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-                <div class="row">
-
-                    <div class="col-md-8">
-
-                        <div class="header-text">
-
+{%extends "layout.html"%}
+{%block content%}
                             <!-- Title & Description -->
                             <h1 class="wow fadeInLeft"> Welcome to my Website!</h1>
                             <p  class="wow bounceIn" data-wow-delay="1s"> 
@@ -136,7 +14,7 @@
 
                             <!-- Header buttons -->
                             <a class="btn btn-download wow fadeInLeft" href="https://github.com/officialyenum">My GitHub</a>
-                            <a class="btn btn-tour wow fadeInRight" href="{{ url_for('blog') }}"> Take A Tour
+                            <a class="btn btn-tour wow fadeInRight" href="#SCREENS"> Take A Tour
                                 <i class="fa fa-angle-down"></i>
                             </a>
 
@@ -151,7 +29,6 @@
 
 
                             <!-- Header iPhone -->
-                            <img class="wow bounceInRight" data-wow-delay="1s"  src="static/images/admin.jpg" alt="header iphone">
 
                         </div>
 
@@ -218,7 +95,7 @@
 
 
                             <h2> Portfolio</h2>
-                            <p>Listed below are my skills, click on the view more.. button to get more information about my past projects in various fields.</p>
+                            <p>Listed below are my skills, click on the view projects... button to get more information about my past projects in various fields.</p>
                         </div>
 
                         <!-- why choose us description -->
@@ -260,7 +137,7 @@
 
                                 <!-- choose us item title & des -->
                                 <h3>PHOTOGRAPHY</h3>
-                                <p>Dedicated photographer with experience in both proffesional and freelance photography. </p>
+                                <p>Dedicated photographer with experience in both professional and freelance photography. </p>
                                 <p><button class="btn btn-default btn-about" type="button"><a href="{{ url_for('photo') }}">view projects...</a></button></p>
 
                             </div>
@@ -292,9 +169,7 @@
     
                 <div class="col-md-9">
     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip.</p>
+                    <p style="text-align:center">Subscribe to my channel</p>
     
                 </div>
     
@@ -323,8 +198,7 @@
                     <div class="section-title">
 
                         <h2> Photo Gallery </h2>
-                        <p>Mauris a mauris feugiat, luctus mauris a, sollicitudin ex. Pellentesque et tortor in risus
-                            elementum aliquet. Etiam facilisis justo urna, id feugiat magna scelerisque non.
+                        <p>An exhibition of my pictures. click button below to view more collections
                         </p>
                         <p><button class="btn btn-default btn-about" type="button"><a href="{{ url_for('photo') }}">view Gallery...</a></button></p>
                     </div>
@@ -342,7 +216,7 @@
 
                 <div class="row">
 
-                    <div class="bxslider">
+                    <div class="bxslider" style="text-align: center">
 
                         <div class="item">
                             <img src="static/images/a1.jpg" alt="screen">
@@ -465,8 +339,10 @@
 
 
                         <h2> My Video Reel </h2>
-                        <p>Vestibulum congue eros ac neque dignissim, vel imperdiet neque consectetur. Maecenas
-                            condimentum cursus maximus. Praesent eu diam efficitur</p>
+                        <p>This is  a video presentation designed to showcase my videos. 
+                            <p>To view more VIDEO projects you can check my playlist by clicking the button below</p>
+                        </p>
+                        
                         <p><button class="btn btn-default btn-about" type="button"><a href="{{ url_for('film') }}">view Playlist...</a></button></p>
 
                     </div>
@@ -614,142 +490,4 @@
 
     </section>
 
-    <!-- Contact Us -->
-    <section class="contact-us" id="CONTACT">
-
-        <div class="container wow bounceIn">
-
-            <div class="row">
-
-                <div class="col-md-10 col-md-offset-1">
-
-                    <div class="section-title">
-
-                        <h2>Contact</h2>
-                        <p>Got any question(s) please Fill the form below, I'll get back to you as soon as i can . THANK YOU.</p>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-        <div class="contact-us-form wow bounceIn">
-
-
-            <div class="container">
-
-                <form role="form" action="https://formspree.io/oponechukwuyenum@gmail.com" method="POST">
-                
-                    <div class="row">
-                
-                        <div class="col-md-4">
-                
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                
-                        </div>
-                
-                        <div class="col-md-8">
-                
-                            <textarea class="form-control" id="message" name="message" rows="25" cols="10" placeholder="Message Text...."></textarea>
-                
-                            <button type="submit" class="btn btn-default submit-btn form_submit">SEND</button>
-                
-                        </div>
-                
-                    </div>
-                
-                
-                </form>
-
-
-            </div>
-
-
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 wow bounceInLeft">
-
-                    <div class="social-icons">
-
-                        <ul>
-
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-
-                        </ul>
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-6">
-
-                    <div id="copyright">
-                        <p>Copyright &copy; 2018 <a href="#"> - ChuckyMagic</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-
-                    <div class="scroll-top">
-                        <a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-    </footer>
-
-
-    <!-- Bootstrap JavaScript -->
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-
-    <!-- Bx Slider JS -->
-    <script src="static/js/jquery.bxslider.min.js"></script>
-
-    <!-- Add JS counter lib -->
-    <script src="static/js/jquery.waypoints.min.js"></script>
-    <script src="static/js/jquery.counterup.min.js"></script>
-
-    <!-- Add wow js lib -->
-    <script src="static/js/wow.min.js"></script>
-
-    <!-- Custom Js -->
-    <script src="static/js/custom.js"></script>
-
-</body>
-
-
-</html>
+    {%endblock%}
