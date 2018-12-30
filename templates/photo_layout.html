@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <title>ChuckyMagic || Official Website </title>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Simple, clean, responsive Portfolio website built with html5, CSS3, Js, jQuery and Bootstrap">
+
+    <meta name="keywords" content="web, design, Portfolio, Programming, Photography, Film, html, css, html5, css3, javascript, jquery, bootstrap, development, Opone, Chukwuyenum,">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900"
+        rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900"
+        rel="stylesheet" type="text/css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='images/cm4 small.png')}}" style="width : 10%;">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/animate.css')}}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style_photo.css')}}">
+
+    <!-- BX slider CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/jquery.bxslider.css')}}">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/responsive.css')}}">
+
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="HOME">
+
+        <!-- Navigation -->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+
+            <div class="container">
+
+                <a href="https://duplexbitcoin.org/main/referal/df013918cef9bae7e7640aa4cfa12bf9"><img src="https://duplexbitcoin.org/img/tools/1.gif"></a>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ url_for('home') }}">
+                        <!-- small size logo -->
+                        <img src="{{url_for('static',filename='images/cm5 small.png')}}" alt="logo" style="width : 50%;">
+
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ url_for('home') }}" class="nav-item active">HOME</a></li>
+                        <li><a href="{{ url_for('about') }}" class="nav-item">ABOUT</a></li>
+                        <li><a href="{{ url_for('blog') }}" class="nav-item">BLOG</a></li>
+                        <li><a href="{{ url_for('programming') }}" class="nav-item">PROGRAMS</a></li>
+                        <li><a href="{{ url_for('photo') }}" class="nav-item">PHOTOGRAPHY</a></li>
+                        <li><a href="{{ url_for('film') }}" class="nav-item">VIDEOS</a></li>
+                        <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+
+        <div class="header-overlay">
+
+
+            <div class="container header-container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <!-- Logo -->
+                        <div class="logo text-center">
+
+                            <img src="{{url_for('static',filename='images/cm5 small.png')}}" alt="logo">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-8">
+
+                        <div class="header-text">
+                            {%block content%}
+
+                            {%endblock%}
+                            <!-- Contact Us -->
+                            <section class="contact-us" id="CONTACT">
+
+                                <div class="container wow bounceIn">
+
+                                    <div class="row">
+
+                                        <div class="col-md-10 col-md-offset-1">
+
+                                            <div class="section-title">
+
+                                                <h2>Contact</h2>
+                                                <p>Got any personal questions relating to Programming, Film and
+                                                    Photography for me, please Fill the form below, I'll get back to
+                                                    you as soon as i can .
+                                                    THANK YOU.</p>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="contact-us-form wow bounceIn">
+
+
+                                    <div class="container">
+
+                                        <form role="form" action="https://formspree.io/oponechukwuyenum@gmail.com"
+                                            method="POST">
+
+                                            <div class="row">
+
+                                                <div class="col-md-4">
+
+                                                    <input type="text" class="form-control" id="name" name="name"
+                                                        placeholder="Name">
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                        placeholder="Email">
+                                                    <input type="text" class="form-control" id="subject" name="subject"
+                                                        placeholder="Subject">
+
+                                                </div>
+
+                                                <div class="col-md-8">
+
+                                                    <textarea class="form-control" id="message" name="message" rows="25"
+                                                        cols="10" placeholder="Message Text...."></textarea>
+
+                                                    <button type="submit" class="btn btn-default submit-btn form_submit">SEND</button>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-12 wow bounceInLeft">
+
+                                            <div class="social-icons">
+
+                                                <ul>
+                                                
+                                                    <li class="col-md-4"><a href="tel:+2347016002963"><i class="fa fa-phone"></i></a></li>
+                                                    <li class="col-md-4"><a href="https://wa.me/+2347064482201"><i class="fa fa-whatsapp"></i></a></li>
+                                                    <li class="col-md-4"><a href="mailto:oponechukwuyenum@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                                
+                                                </ul>
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </section>
+
+                            <!-- Footer -->
+                            <footer class="footer">
+
+                                <div class="container">
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <div id="copyright">
+                                                <p>Copyright &copy; 2018 <a href="{{ url_for('about') }}"> - Opone
+                                                        Chukwuyenum @ChuckyMagic</a></p>
+                                                <p>+2347016002963 {Calls Only}</p>
+                                                <p>+2347064482201 {Whatsapp}</p>
+                                                <p>oponechukwuyenum@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <div class="scroll-top">
+                                                <p>
+                                                    <a href="#HOME" id="scroll-to-top">
+                                                        Return to Top <i class="fa fa-angle-up"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </footer>
+
+
+                            <!-- Bootstrap JavaScript -->
+                            <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+                            <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+
+                            <!-- Bx Slider JS -->
+                            <script src="{{url_for('static',filename='js/jquery.bxslider.min.js')}}"></script>
+
+                            <!-- Add JS counter lib -->
+                            <script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+                            <script src="{{url_for('static',filename='js/jquery.counterup.min.js')}}"></script>
+
+                            <!-- Add wow js lib -->
+                            <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+
+                            <!-- Custom Js -->
+                            <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+</body>
+
+
+</html>
