@@ -263,7 +263,7 @@ p {
     padding-top: 50px;
 }
 
-.about-iphone img {
+.about-info img {
     margin-top: 8px;   
     border: 4px solid #ffffff;
     border-radius: 20%
@@ -381,6 +381,64 @@ p {
     line-height: 27px;
     padding-top: 50px;
 }
+
+
+/*=====================================================================
+                    portfolio section 
+====================================================================*/
+
+.main_portfolio_content{
+    display: inline-block
+}
+.main_portfolio_content .single_portfolio{
+    position: relative;
+    margin-bottom: 18px;
+}
+.main_portfolio_content .single_portfolio img{
+    width:100%;
+}
+.main_portfolio_content .single_portfolio:hover .single_portfolio_overlay{
+    opacity: 1;
+}
+.single_portfolio_overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background: rgba(221, 221, 221, 0.60);
+    opacity: 0;
+    transition: all 0.3s;
+
+}
+.single_portfolio_overlay .icon_area{
+    position: absolute;
+    top:45%;
+    width:50%;
+    height: 100%;
+}
+.single_portfolio_overlay .icon_area img{
+    width:27px;
+    height:25px;
+}
+.single_portfolio_overlay .icon_area img{
+    width:27px;
+    height:25px;
+}
+.single_portfolio.height_1 .icon_area img{
+    width:27px;
+    height:25px;
+}
+.single_portfolio img{
+    width:50%;
+    height: 280px; 
+
+}
+.single_portfolio.height_1 img{
+    width:50%;
+    height: 575px;
+}
+
 /* ========= Features ============= */
 .features-inner-wrapper {
     
@@ -722,7 +780,9 @@ p {
 .scroll-top {
     text-align: right;
 }
-.scroll-top a {
+
+.scroll-top p a {
+    color: #fff;
     background-color: #129CF3;
     padding: 25px;
 }
@@ -730,6 +790,12 @@ p {
     color: #fff;
     font-size: 25px;
 }
+.scroll-top p a:hover {
+    background-color: #129CF3;
+    border: 1px solid #fff;
+    color: #fff;
+} 
+
 
 
 
