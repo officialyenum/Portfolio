@@ -20,6 +20,9 @@ def photo():
 def programming():
     return render_template("programming.html")
 
+@app.route('/apps/')
+def apps():
+    return render_template("apps.html")
 
 @app.route('/film/')
 def film():
@@ -29,7 +32,6 @@ def film():
 @app.route('/blog/')
 def blog():
     return render_template("blog.html")
-
 
 if __name__=="__main__":
     app.run(debug=True)
