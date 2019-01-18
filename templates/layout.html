@@ -34,7 +34,7 @@
 
   <!-- Animate CSS -->
   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/animate.css')}}">
-
+  <!-- Style CSS -->
   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
 
   <!-- BX slider CSS -->
@@ -81,7 +81,17 @@
             <li><a href="{{ url_for('home') }}" class="nav-item active">HOME</a></li>
             <li><a href="{{ url_for('about') }}" class="nav-item">ABOUT</a></li>
             <li><a href="{{ url_for('blog') }}" class="nav-item">BLOG</a></li>
-            <li><a href="{{ url_for('programming') }}" class="nav-item">PROGRAMS</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROGRAMS
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('programming') }}" class="nav-item">CLI APPS</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="{{ url_for('apps') }}" class="nav-item">WEB APPS</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">UNAVAILABLE</a></li>
+              </ul>
+            </li>
             <li><a href="{{ url_for('photo') }}" class="nav-item">PHOTOGRAPHY</a></li>
             <li><a href="{{ url_for('film') }}" class="nav-item">VIDEOS</a></li>
             <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
@@ -267,6 +277,7 @@
 
               <!-- Custom Js -->
               <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+              <script src="{{url_for('static',filename='js/app.js')}}"></script>
 
 </body>
 
