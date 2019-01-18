@@ -1,15 +1,14 @@
 /* add two numbers and get remainder */
 
-//
 function getModulo() {
     var x = document.getElementById("num1").value;
     var y = document.getElementById("num2").value;
     // If x is Not a number
     if (isNaN(x) || isNaN(y) ) {
-        text = "Input is not number";
+        text = "One or more Input is not number";
     } else {
         if (x == "" || y == "") {
-            text = "Input is not number";
+            text = "One or more Input is empty";
         } else {
             var z = parseInt(x) % parseInt(y);
             text = "Mod Value : " + z;
