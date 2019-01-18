@@ -412,7 +412,7 @@ a {
 /* ========= App ==============*/
 #APP {
     background: #1a1a1a;
-    background-image: url("../images/photography.jpg");
+    /*--background-image: url("../images/photography.jpg"); --*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
