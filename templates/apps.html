@@ -1,0 +1,111 @@
+{%extends "layout.html"%}
+{%block content%}
+<!-- Title & Description -->
+    <h1 class="wow fadeInLeft"> Welcome to my WebAPP!</h1>
+        <p class="wow bounceIn" data-wow-delay="1s">
+            <span>I </span>
+            <span>AM </span>
+            <span><a href="#">OPONE CHUKWUYENUM</a></span>
+        </p>
+
+</div>
+
+    <div class="header-btns">
+
+        <!-- Header buttons -->
+        <a class="btn btn-download wow fadeInLeft" href="https://github.com/officialyenum">My GitHub</a>
+        <a class="btn btn-tour wow fadeInRight" href="#APP"> Take A Tour
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+
+    </div>
+
+</div>
+
+    <div class="col-md-3 col-md-offset-1">
+
+        <div class="header-iphone">
+
+
+            <!-- Header iPhone -->
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</header>
+
+<!-- App Modulo -->
+<section id="APP">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>App Modulo</h2>
+                    <p>This App gets the Modulo of two numbers. i.e, the remainder</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="appModulo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input_1">
+                        <div class="col-md-6">
+                            <p>
+                                Enter first Number
+                                <input type="text" class="form-control" id="num1" name="num1" value="" placeholder="dividend...">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="col-md-6">
+                            <p>
+                                Enter second Number
+                                <input type="text" class="form-control" id="num2" name="num2" value="" placeholder="divisor...">
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <p>
+                            Click to calculate mod
+                            <button onclick="getModulo()" id="mod-button" class="btn btn-default submit-btn">MOD</button>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 id="modAnswer" style="text-align:center; font-size:3em;"></h2>
+                    </div>
+                    <script type="text/javascript">
+                        function getModulo() {
+                                var x = document.getElementById("num1").value;
+                                var y = document.getElementById("num2").value;
+                                var z = parseInt(x) % parseInt(y);
+                                document.getElementById("modAnswer").innerHTML = "Mod Value:" + z;
+                            }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+{%endblock%}
