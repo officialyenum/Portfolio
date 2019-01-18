@@ -14,6 +14,10 @@ p {
     font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ============= Generic CSS ============== */
 
 .section-title {
@@ -251,6 +255,28 @@ p {
     color: #129CF3;
 }
 
+.btn-about ,
+.btn-about:focus,
+.btn-about:active,
+.btn-about:visited{
+    text-decoration: none;
+    color: #A9ADB0;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    background: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+     -o-transition: all 1s;
+}
+
+.btn-about a,
+.btn-about a:hover {
+    text-decoration: none;
+}
+
 .header-iphone img {
     border: 3px solid #129CF3;
     border-radius: 50%;
@@ -383,61 +409,28 @@ p {
 }
 
 
-/*=====================================================================
-                    portfolio section 
-====================================================================*/
+/* ========= App ==============*/
+#APP {
+    background: #1a1a1a;
+    background-image: url("../images/photography.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    text-decoration-color: #fff;
+}
 
-.main_portfolio_content{
-    display: inline-block
+#APP h2 p{
+    color: white;
 }
-.main_portfolio_content .single_portfolio{
-    position: relative;
-    margin-bottom: 18px;
-}
-.main_portfolio_content .single_portfolio img{
-    width:100%;
-}
-.main_portfolio_content .single_portfolio:hover .single_portfolio_overlay{
-    opacity: 1;
-}
-.single_portfolio_overlay{
-    position: absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height: 100%;
-    background: rgba(221, 221, 221, 0.60);
-    opacity: 0;
-    transition: all 0.3s;
 
+.appModulo h2 p{
+    color: white;
 }
-.single_portfolio_overlay .icon_area{
-    position: absolute;
-    top:45%;
-    width:50%;
-    height: 100%;
-}
-.single_portfolio_overlay .icon_area img{
-    width:27px;
-    height:25px;
-}
-.single_portfolio_overlay .icon_area img{
-    width:27px;
-    height:25px;
-}
-.single_portfolio.height_1 .icon_area img{
-    width:27px;
-    height:25px;
-}
-.single_portfolio img{
-    width:50%;
-    height: 280px; 
 
-}
-.single_portfolio.height_1 img{
-    width:50%;
-    height: 575px;
-}
 
 /* ========= Features ============= */
 .features-inner-wrapper {
